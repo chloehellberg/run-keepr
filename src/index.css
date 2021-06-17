@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: url("https://new.certainty3d.com/blog/wp-content/uploads/2019/10/countoured-lines.jpg");
+  /* background-size: cover; */
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background: #31a4d9;
+  margin-bottom: 0px !important;
+  position: sticky;
+  top: 0;
+  z-index: 99998;
+  transition: 0.3s all;
+  padding: 5px;
+}
+
+.nameTop {
+  color: white;
+  font-family: Helvetica;
+}
+
+.feedLink {
+  color: white !important;
 }
