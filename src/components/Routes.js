@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Feed from "./Feed";
-import Me from "./Me";
-import Log from "./Log";
+import Feed from "./FeedSection/Feed";
+import Me from "./MeSection/Me";
+import Log from "./LogSection/Log";
 
 export default function Routes() {
   return (
@@ -12,6 +12,9 @@ export default function Routes() {
       </Route>
       <Route exact path="/me">
         <Me />
+      </Route>
+      <Route path="/me/reports">
+        <div>REPORTS</div>
       </Route>
       <Route exact path="/log">
         <Log />
