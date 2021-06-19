@@ -1,0 +1,53 @@
+.card {
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  display: flex;
+}
+
+.nav-link {
+  color: #888;
+  font-size: 14px;
+}
+
+.subNav_Img {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.placeHolder_Img {
+  width: 10%;
+}
+
+.subNav_Tabs {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.avatar_Username {
+  margin: auto;
+  display: block;
+  color: #888;
+  /* margin-top: 0; */
+}
+
+.full_name {
+  margin-top: 15px;
+  color: #212529;
+}
+
+.active_date {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.avatar_Username {
+  align-items: left;
+}
+
+.Icon {
+  size: 30;
+}

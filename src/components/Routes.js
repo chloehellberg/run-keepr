@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Feed from "./FeedSection/Feed";
-import Me from "./MeSection/Me";
-import Log from "./LogSection/Log";
+import Feed from "./FeedNav/Feed";
+import Me from "./MeNav/MeTab";
+import Log from "./LogNav/Log";
 
 export default function Routes() {
   return (
