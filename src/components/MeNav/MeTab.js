@@ -4,26 +4,15 @@ import "./MeTab.css";
 import { Nav, Button, Container, Row, Col, Image } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import * as Icon from "react-bootstrap-icons";
+import Route from "./RoutesNav/Map";
+import Dashboard from "./DashboardNav/Dashboard";
 
 export default function Me() {
   return (
     <div className="me">
-      {/* <Router>
-        <div style={{ width: 1000, margin: "0 auto" }}>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-          </ul>
-        </div>
-      </Router> */}
-
       <Card
         className="subNavContainer"
-        style={{ width: "60rem", height: "40rem" }}
+        style={{ width: "960px", height: "735px" }}
       >
         <Card.Header>
           <Nav variant="tabs" defaultActiveKey="#first" className="subNav_Tabs">
@@ -80,12 +69,7 @@ export default function Me() {
           </Nav>
         </Card.Header>
         <Card.Body>
-          <Card.Title>Special title treatment</Card.Title>
-          <Card.Text>
-            With supporting text below as a natural lead-in to additional
-            content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <Route />
         </Card.Body>
       </Card>
     </div>
