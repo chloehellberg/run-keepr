@@ -51,7 +51,7 @@ h3 {
 }
 
 .addButton {
-  padding: 0 6px 4px 6px;
+  padding: 0 5px 1px 5px;
   float: right;
   color: #fff;
   font-size: 18px;
@@ -62,4 +62,11 @@ h3 {
   position: relative;
   z-index: 2;
   border-radius: 4px;
+  border: 1px solid #8bd554;
+  background: linear-gradient(
+    to bottom,
+    rgba(151, 230, 93, 1) 0%,
+    rgba(139, 213, 84, 1) 100%
+  );
+  text-shadow: 0px 1px 2px #74c13b;
 }
