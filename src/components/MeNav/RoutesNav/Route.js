@@ -1,13 +1,16 @@
 import React from "react";
+import "./Route.css";
 
-function Map() {
+function Route() {
   return (
     <React.Fragment>
       <div className="leftContentColumn">
         <div className="clearFix">
+          <a href="/new/route">
+            <div className="addButton">+</div>
+          </a>
           <h3 className="userHeader_Routes">ROUTES</h3>
           <div className="mainColumnPadding"></div>
-          <div className="colDivider"></div>
         </div>
       </div>
       <div className="mainContentColumn">
@@ -19,18 +22,4 @@ function Map() {
   );
 }
 
-export default Map;
-
-{
-  /* <div className="leftContentColumn">
-<div className="clearFix">
-  <h3 className="userHeader_Routes">ROUTES</h3>
-  <div className="mainColumnPadding"></div>
-  <div className="colDivider"></div>
-</div>
-</div>
-<div className="mainContentColumn">
-<div className="columnContent">
-  <h2 class="userHeader">"Route Title Here"</h2>
-</div> */
-}
+export default Route;

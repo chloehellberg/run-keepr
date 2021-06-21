@@ -4,7 +4,7 @@ import "./MeTab.css";
 import { Nav, Button, Container, Row, Col, Image } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import * as Icon from "react-bootstrap-icons";
-import Route from "./RoutesNav/Map";
+import Route from "./RoutesNav/Route";
 import Dashboard from "./DashboardNav/Dashboard";
 
 export default function Me() {
