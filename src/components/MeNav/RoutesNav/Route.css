@@ -207,3 +207,15 @@ p {
 .mapArea {
   position: relative;
 }
+
+/* .mappingTool {
+  height: 180px;
+} */
+
+/* .mapid {
+  height: 180px;
+} */
+
+.leaflet-container {
+  height: 480px;
+}

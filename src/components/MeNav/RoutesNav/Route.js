@@ -1,5 +1,7 @@
 import React from "react";
 import "./Route.css";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 
 function Route() {
   return (
@@ -75,7 +77,18 @@ function Route() {
           <div className="mainColumnPadding">
             <p></p>
             <div className="mapArea">
-              <div className="mappingTool"></div>
+              <div className="mappingTool">
+                <MapContainer
+                  center={{ lat: 45.536099, lng: -122.647902 }}
+                  zoom={13}
+                  scrollWheelZoom={false}
+                >
+                  <TileLayer
+                    attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                  />
+                </MapContainer>
+              </div>
             </div>
           </div>
         </div>
