@@ -208,14 +208,25 @@ p {
   position: relative;
 }
 
-/* .mappingTool {
-  height: 180px;
-} */
-
-/* .mapid {
-  height: 180px;
-} */
-
 .leaflet-container {
   height: 480px;
 }
+/* 
+.leaflet-marker-icon {
+  background: url("https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png")
+    no-repeat 0 1px;
+}
+
+img,
+.leaflet-marker-icon {
+  background: url("https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png")
+    no-repeat 0 1px;
+} */
+
+/* .leaflet-default-icon-path {
+  background-image: url(images/marker-icon.png);
+}
+
+.leaflet-default-shadow-path {
+  background-image: url(images/marker-shadow.png);
+} */

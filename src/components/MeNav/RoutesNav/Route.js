@@ -1,9 +1,60 @@
-import React from "react";
+import React, { useState, useRef, useMemo, useCallback } from "react";
 import "./Route.css";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import markerIconPng from "leaflet/dist/images/marker-icon.png";
+import { Icon } from "leaflet";
 
 function Route() {
+  const center = {
+    lat: 51.505,
+    lng: -0.09,
+  };
+
+  function DraggableMarker() {
+    const [draggable, setDraggable] = useState(false);
+    const [position, setPosition] = useState(center);
+    const markerRef = useRef(null);
+    const eventHandlers = useMemo(
+      () => ({
+        dragend() {
+          const marker = markerRef.current;
+          if (marker != null) {
+            setPosition(marker.getLatLng());
+          }
+        },
+      }),
+      []
+    );
+    const toggleDraggable = useCallback(() => {
+      setDraggable((d) => !d);
+    }, []);
+
+    return (
+      <Marker
+        draggable={draggable}
+        eventHandlers={eventHandlers}
+        position={position}
+        ref={markerRef}
+        icon={
+          new Icon({
+            iconUrl: markerIconPng,
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+          })
+        }
+      >
+        <Popup minWidth={70}>
+          <span onClick={toggleDraggable}>
+            {draggable
+              ? "Marker is draggable"
+              : "Click here to make marker draggable"}
+          </span>
+        </Popup>
+      </Marker>
+    );
+  }
+
   return (
     <React.Fragment>
       <div className="leftContentColumn">
@@ -78,15 +129,12 @@ function Route() {
             <p></p>
             <div className="mapArea">
               <div className="mappingTool">
-                <MapContainer
-                  center={{ lat: 45.536099, lng: -122.647902 }}
-                  zoom={13}
-                  scrollWheelZoom={false}
-                >
+                <MapContainer center={center} zoom={13} scrollWheelZoom={false}>
                   <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                   />
+                  <DraggableMarker />
                 </MapContainer>
               </div>
             </div>
