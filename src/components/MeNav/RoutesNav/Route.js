@@ -72,6 +72,12 @@ function Route() {
             </div>
             Tilikum to Hawthorne<span className="details"> (2.11 mi)</span>
           </h2>
+          <div className="mainColumnPadding">
+            <p></p>
+            <div className="mapArea">
+              <div className="mappingTool"></div>
+            </div>
+          </div>
         </div>
       </div>
     </React.Fragment>
