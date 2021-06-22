@@ -27,7 +27,7 @@
   justify-content: flex-start;
   flex: 1 0 0;
   border-right: 1px solid #e9e9e9;
-  min-height: 1334px;
+
   padding: 0;
   margin-right: 0px;
   border-top-left-radius: 3px;
@@ -69,4 +69,119 @@ h3 {
     rgba(139, 213, 84, 1) 100%
   );
   text-shadow: 0px 1px 2px #74c13b;
+}
+
+.navPills_Routes {
+  margin-left: 0;
+  margin-bottom: 18px;
+  list-style: none;
+  color: #888 !important;
+}
+
+.navPills_Routes > li.selected a {
+  background-color: #daf3ff;
+}
+
+.nav-pills.nav-stacked > li > a {
+  margin-bottom: 3px;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 9px 25px;
+}
+
+ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.unitDistance {
+  float: right;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #888;
+  min-width: 45px;
+  text-align: right;
+}
+
+.secondaryNav > li a {
+  color: #444;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+/* Main Content Column CSS Below */
+
+.mainContentColumn {
+  padding: 0;
+  width: 700px;
+}
+
+.userHeader {
+  padding-left: 20px;
+  margin: 0;
+  line-height: 65px;
+  border-bottom: 1px solid #e9e9e9;
+  background-repeat: no-repeat;
+  background-position: 7px -77px;
+  position: relative;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+}
+
+.deleteRouteLink {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  line-height: 14px;
+}
+.microText {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.activityEdit,
+.editRace {
+  background: url("https://static-web.runkeeper.com/build/16279/static/kronos/images/icon-edit.png")
+    no-repeat 0 1px;
+}
+
+.activityActionItem {
+  float: right;
+  padding: 0 0 0 15px;
+  height: 30px;
+  color: #1596d2;
+}
+
+.dividerWhite {
+  background: url("https://static-web.runkeeper.com/build/16279/static/kronos/images/divider-white.png")
+    no-repeat 0 0;
+  width: 1px;
+  height: 14px;
+  margin: 0 10px;
+}
+
+.dividerWhite.right {
+  float: right;
+}
+
+.activityDelete,
+.deleteRoute {
+  background: url("https://static-web.runkeeper.com/build/16279/static/kronos/images/icon-delete.png")
+    no-repeat 0 1px;
 }
