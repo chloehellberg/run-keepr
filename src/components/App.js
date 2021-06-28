@@ -25,7 +25,7 @@ function App() {
               <LinkContainer to="/">
                 <Nav.Link className="feedLink">FEED</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/me">
+              <LinkContainer to="/user">
                 <Nav.Link className="meLink">ME</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/log">

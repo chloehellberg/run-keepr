@@ -1,8 +1,9 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Feed from "./FeedNav/Feed";
-import Me from "./MeNav/MeTab";
+import UserTab from "./UserNav/UserTab";
 import Log from "./LogNav/Log";
+import AddMap from "./UserNav/MapNav/AddMap";
 
 export default function Routes() {
   return (
@@ -10,11 +11,11 @@ export default function Routes() {
       <Route exact path="/">
         <Feed />
       </Route>
-      <Route exact path="/me">
-        <Me />
+      <Route exact path="/user">
+        <UserTab />
       </Route>
-      <Route path="/me/reports">
-        <div>REPORTS</div>
+      <Route path="/new/route">
+        <AddMap />
       </Route>
       <Route exact path="/log">
         <Log />

@@ -207,3 +207,7 @@ p {
 .mapArea {
   position: relative;
 }
+
+.leaflet-container {
+  height: 480px;
+}
